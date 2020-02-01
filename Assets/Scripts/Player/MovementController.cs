@@ -6,6 +6,7 @@ public class MovementController : MonoBehaviour
 {
 
     bool hasMoved;
+    public GameObject player;
     public string upKeyStr;
     public string donwKeyStr;
     public float upDist = 0.1f;
@@ -20,10 +21,10 @@ public class MovementController : MonoBehaviour
     // Update is called once per frame
     void Move()
     {      
-        if (Input.GetKeyDown(upKeyStr))
+        if (Input.GetKeyDown(upKeyStr) && player.transform.position.y < 1.5f)
         {
             transform.position += new Vector3(0.0f, upDist);
-        }else if(Input.GetKeyDown(donwKeyStr)){
+        }else if(Input.GetKeyDown(donwKeyStr) && player.transform.position.y > -3.5f){
             transform.position += new Vector3(0.0f, downDist);
         }
     }
