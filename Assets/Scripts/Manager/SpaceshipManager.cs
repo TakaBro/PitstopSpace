@@ -9,33 +9,42 @@ public class SpaceshipManager : MonoBehaviour
     [SerializeField] SpaceshipData BigSpaceship;
     [SerializeField] SpaceshipData MidSpaceship;
     [SerializeField] SpaceshipData LittleSpaceship;
-    public SpaceshipComponent spaceshipComp;
+    private SpaceshipComponent spaceshipComp;
 
-    float timeLeft = 5f;
+    public float spaceshipTimer = 5f;
+    float originalTimer;
     int random;
 
     // Start is called before the first frame update
     void Awake()
     {
+        originalTimer = spaceshipTimer;
         spaceshipComp = spaceship.GetComponent<SpaceshipComponent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeLeft -= Time.deltaTime;
-        if ( timeLeft < 0 )
+        //Timer for each spaceship
+        spaceshipTimer -= Time.deltaTime;
+        if ( spaceshipTimer < 0 )
         {
             RandomSpaceship();
-            timeLeft = 5f;
+            spaceshipTimer = originalTimer;
         }        
     }
 
     void RandomSpaceship()
     {
-        random = Random.Range(1, 3);
-        if(random == 3) spaceshipComp.SetData(BigSpaceship);
-        else if(random == 2) spaceshipComp.SetData(MidSpaceship);
-        else spaceshipComp.SetData(LittleSpaceship);
+        random = Random.Range(0, 2);
+        if(random == 1) {
+            spaceshipComp.SetData(BigSpaceship);
+            //Debug.Log("BigSpaceship");
+        }
+        //else if(random == 2) spaceshipComp.SetData(MidSpaceship);
+        else {
+            spaceshipComp.SetData(LittleSpaceship);
+            //Debug.Log("LittleSpaceship");
+        }
     }
 }
