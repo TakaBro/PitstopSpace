@@ -19,4 +19,4 @@ MonoBehaviour:
     enable: 0
   - id: 0
     enable: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7f23f1ca4d05dd046ac4ed481dc54996, type: 3}
