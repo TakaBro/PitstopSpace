@@ -6,40 +6,25 @@ public class MovementController : MonoBehaviour
 {
 
     bool hasMoved;
+    public string upKeyStr;
+    public string donwKeyStr;
+    public float upDist = 0.1f;
+    public float downDist = -0.1f;
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            transform.position += new Vector3(0.0f, 0.1f);
-        }else if(Input.GetKeyDown(KeyCode.DownArrow)){
-            transform.position += new Vector3(0.0f, -0.1f);
-        }
-
-        /*Debug.Log(Input.GetAxis("Vertical"));
-
-        if(Input.GetAxis("Vertical") == 0)
-        {
-            hasMoved = false;
-        }
-        else if(Input.GetAxis("Vertical") != 0 && !hasMoved)
-        {
-            hasMoved = true;
-
-            Move();
-        }*/
+         Move();
     }
 
     // Update is called once per frame
     void Move()
-    {
-        if (Input.GetAxis("Vertical") < 0)
+    {      
+        if (Input.GetKeyDown(upKeyStr))
         {
-            transform.position += new Vector3(0.0f, -0.1f);
-        }else {
-            transform.position += new Vector3(0.0f, 0.1f);
+            transform.position += new Vector3(0.0f, upDist);
+        }else if(Input.GetKeyDown(donwKeyStr)){
+            transform.position += new Vector3(0.0f, downDist);
         }
     }
 }
