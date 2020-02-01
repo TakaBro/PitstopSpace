@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f53cb9dd0ee6048a753122cdc7a34d, type: 3}
   m_Name: Medio
   m_EditorClassIdentifier: 
-  slots: []
+  slots:
+  - id: 0
+    enable: 0
+  - id: 0
+    enable: 0
+  - id: 0
+    enable: 0
+  - id: 0
+    enable: 0
+  - id: 0
+    enable: 0
+  - id: 0
+    enable: 0
   sprite: {fileID: 0}
