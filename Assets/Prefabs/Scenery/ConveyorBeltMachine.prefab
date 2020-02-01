@@ -348,8 +348,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a943d27a21d090442ac4e43f48587476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsManager: {fileID: 11400000, guid: 64f4162b3d4f6d44391e2325e36840bb, type: 2}
   data: {fileID: 11400000, guid: 7b7c5dc8ce55eb743b663b4a48551d99, type: 2}
-  itemComponent: {fileID: 0}
+  itemComponent: {fileID: 7122969225579382413, guid: 8fc6693aeea98c642ab5a1824407c1e1,
+    type: 3}
+  itemContainer: {fileID: 2181928230404416341}
   onTimeReached:
     m_PersistentCalls:
       m_Calls:
