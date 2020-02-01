@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemData : MonoBehaviour
+[CreateAssetMenu(menuName ="Data/Item")]
+public class ItemData : ScriptableObject
 {
     public int id;
     public Sprite sprite;
