@@ -30,7 +30,7 @@ public class ConveyorBeltComponent : MonoBehaviour
     {
         if (TimeReached(data.moveDelay))
         {
-            Debug.Log("Move");
+            //Debug.Log("Move");
             onTimeReached.Invoke();
             MoveItems();
         }

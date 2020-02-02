@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Containers/Item Manager")]
+[CreateAssetMenu(menuName = "Managers/Item Manager")]
 public class ItemsManager : ScriptableObject
 {
     [SerializeField] List<ItemData> itemCollection;
