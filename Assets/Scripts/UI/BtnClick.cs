@@ -11,9 +11,9 @@ public class BtnClick : MonoBehaviour
         SceneManager.LoadScene("Scenery 1");
     }
 
-    public void BtnRanking()
+    public void BtnHighScore()
     {
-        //TO DO Ranking
+        SceneManager.LoadScene("HighScore");
     }
 
     // Update is called once per frame
