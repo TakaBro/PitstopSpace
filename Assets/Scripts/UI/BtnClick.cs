@@ -11,7 +11,7 @@ public class BtnClick : MonoBehaviour
     public Button firstBtn;
 
     public void Start(){
-        firstBtn.Select();
+        firstBtn?.Select();
     }
 
     public void BtnMenu()

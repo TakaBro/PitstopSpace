@@ -1,7 +1,9 @@
-﻿using System;
+﻿using GameDevToolbelt;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "Data/Game Data")]
 public class GameData : ScriptableObject
@@ -18,6 +20,7 @@ public class GameData : ScriptableObject
     public Action<int> onLifesChange;
     public Action<int> onPointsChange;
     public Action onLifeDepleted;
+    [SerializeField] ScriptableEvent onGameLost;
     
     public void Reset()
     {
@@ -68,7 +71,9 @@ public class GameData : ScriptableObject
         onLifesChange(lifes);
         if(lifes <= 0)
         {
-            onLifeDepleted();
+            //onLifeDepleted();
+            onGameLost.TriggerEvent();
+            Debug.Log("Lost The Game");
         }
     }
 

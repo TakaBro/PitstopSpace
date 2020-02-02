@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d09c778d6fe0bc4b9fbecc922f9dd9f, type: 3}
-  m_Name: GameData
+  m_Script: {fileID: 11500000, guid: 367a7535b381b724a8186e5bd284b9dc, type: 3}
+  m_Name: OnGameLost
   m_EditorClassIdentifier: 
-  timer: 2
-  fixedShips: 3
-  missedShips: 1
-  lifes: 2
-  points: 12
-  onGameLost: {fileID: 11400000, guid: 1d6e25639d904694981f2f0bea180800, type: 2}
+  _event:
+    m_PersistentCalls:
+      m_Calls: []

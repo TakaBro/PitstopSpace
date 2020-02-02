@@ -17,11 +17,11 @@ public class HangarComponent : MonoBehaviour
     [SerializeField] UnityEvent onShipRepaired;
     [SerializeField] UnityEvent onShipReleased;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(5);
         gameData.Reset();
         DockShip(spaceshipManager.GetRandomSpaceship());
-
     }
 
     private void Update()
@@ -45,7 +45,7 @@ public class HangarComponent : MonoBehaviour
 
     }
 
-    void StopTimer()
+    public void StopTimer()
     {
         timerRunning = false;
     }
