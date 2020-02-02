@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Move();
-        GetItem();
+        Interact();
     }
 
     void Move()
@@ -44,20 +44,38 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void GetItem()
+    void Interact()
     {      
         if (Input.GetKeyDown(keys.pickKey) && !carrying)
         {
-            Collider2D colider = Physics2D.Linecast(transform.position, transform.position + Vector3.right * right * 5, 
+            Collider2D colider = Physics2D.Linecast(transform.position, transform.position + Vector3.right * right * 3, 
                 1 << LayerMask.NameToLayer("Item")).collider;
-            
+            Debug.DrawLine(transform.position, transform.position + Vector3.right * right * 3, Color.green);
             itemData = colider.GetComponent<ItemComponent>()?.ConsumeItem();
-            spriteR.sprite = itemData?.sprite;
+            
+            if(itemData)
+            {
+                spriteR.sprite = itemData?.sprite;
+                carrying = true;
+                m_Animator.SetBool("Carrying", carrying);
+            }
+        }
 
-            carrying = true;
-            m_Animator.SetBool("Carrying", true);
-        }/*else if(Input.GetKeyDown(dropBtn) && ){
-            TODO DROP ITEM
-        }*/
+        if (Input.GetKeyDown(keys.dropKey) && carrying)
+        {
+            Collider2D colider = Physics2D.Linecast(transform.position, transform.position + Vector3.right * -right * 3,
+                1 << LayerMask.NameToLayer("Slot")).collider;
+            Debug.DrawLine(transform.position, transform.position + Vector3.right * -right * 3,Color.green);
+            HangarSlotComponent slot = colider.GetComponent<HangarSlotComponent>();
+            if (slot)
+            {
+                slot.FixPart(itemData);
+                itemData = null;
+                carrying = false;
+                spriteR.sprite = null;
+                m_Animator.SetBool("Carrying", carrying);
+            }
+            
+        }
     }
 }

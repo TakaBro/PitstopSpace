@@ -15,7 +15,7 @@ TagManager:
   - 
   - Player
   - Item
-  - 
+  - Slot
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Platform
+    uniqueID: 4042633291
+    locked: 0
   - name: Player
     uniqueID: 1615520327
     locked: 0
   - name: Spaceship
     uniqueID: 3392762619
+    locked: 0
+  - name: UI
+    uniqueID: 3879636927
     locked: 0
