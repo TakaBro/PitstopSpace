@@ -9,6 +9,7 @@ public class HangarComponent : MonoBehaviour
     [SerializeField] SpaceshipComponent spaceship;
     [SerializeField] SpaceshipManager spaceshipManager;
     [SerializeField] ItemsManager itemsManager;
+    [SerializeField] GameData gameData;
     float originalTimer;
     bool timerRunning;
 
@@ -18,6 +19,7 @@ public class HangarComponent : MonoBehaviour
 
     private void Start()
     {
+        gameData.Reset();
         DockShip(spaceshipManager.GetRandomSpaceship());
 
     }
@@ -36,12 +38,22 @@ public class HangarComponent : MonoBehaviour
     void CountTimer()
     {
         if(timerRunning)
+        {
             originalTimer -= Time.deltaTime;
+            gameData.CountTimer((int)originalTimer + 1);
+        }
+
+    }
+
+    void StopTimer()
+    {
+        timerRunning = false;
     }
 
     void ResetTimer()
     {
         originalTimer = spaceshipManager.repairInitialTimer;
+        gameData.SetTimer((int)originalTimer + 1);
         timerRunning = true;
     }
 
@@ -67,10 +79,12 @@ public class HangarComponent : MonoBehaviour
             {
                 slotComponent.status = SlotStatus.DEFECTIVE;
                 slotComponent.materialNeeded = spaceship.problems.Find(p => p.slot == slotComponent.hangarCode).item;
+                //slotComponent.itemSprite.sprite = slotComponent.materialNeeded.sprite;
             }
             else
             {
                 slotComponent.materialNeeded = null;
+                //slotComponent.itemSprite.sprite = null;
             }
                 
         }
@@ -84,12 +98,25 @@ public class HangarComponent : MonoBehaviour
         StartCoroutine(CheckShip());
     }
 
+    public void CountFixes()
+    {
+        int totalFixes = 0;
+        foreach (var slot in slots)
+        {
+            if (slot.status == SlotStatus.FIXED)
+                totalFixes++;
+        }
+        gameData.AddPoints(totalFixes);
+    }
+
     public IEnumerator CheckShip()
     {
         if (!slots.Exists(s => s.status == SlotStatus.DEFECTIVE))
         {
+            CountFixes();
             onShipRepaired.Invoke();
-            Debug.Log($"Ship repaired. New ship arriving in 5");
+            StopTimer();
+            Debug.Log($"Ship repaired. New ship arriving in 2");
             yield return new WaitForSecondsRealtime(2);
             Debug.Log($"New ship arriving...");
             spaceship.gameObject.SetActive(false);
@@ -101,7 +128,8 @@ public class HangarComponent : MonoBehaviour
     public IEnumerator ReleaseShip()
     {
         onShipReleased.Invoke();
-        Debug.Log($"Repair time ended. New ship arriving in 5");
+        StopTimer();
+        Debug.Log($"Repair time ended. New ship arriving in 2");
         yield return new WaitForSecondsRealtime(2);
         Debug.Log($"New ship arriving...");
         spaceship.gameObject.SetActive(false);
