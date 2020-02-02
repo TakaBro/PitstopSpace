@@ -125,14 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f4cad4164e60e4883f612568e25128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keys: {fileID: 0}
   right: 0
-  upKeyStr: 
-  donwKeyStr: 
-  upDist: 0
-  downDist: 0
-  pickBtn: 
-  dropBtn: 
-  spriteR: {fileID: 0}
+  upDist: 1
+  downDist: -1
+  spriteR: {fileID: 4876544266995046768}
 --- !u!1 &5176388030108045688
 GameObject:
   m_ObjectHideFlags: 0

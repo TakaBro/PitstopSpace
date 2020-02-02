@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public PlayerControllerKeys keys;
     public int right;
 
-    public string upKeyStr;
-    public string donwKeyStr;
     public float upDist;
     public float downDist;
 
-    private ItemData itemData;
-    public string pickBtn;
-    public string dropBtn;
+    private ItemData itemData; 
     bool carrying = false;
 
     public SpriteRenderer spriteR;
@@ -27,13 +24,13 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {      
-        if (Input.GetKeyDown(upKeyStr) && transform.position.y < 1.5f)
+        if (Input.GetKeyDown(keys.upKey) && transform.position.y < 1.5f)
         {
             transform.position += new Vector3(0.0f, upDist);
-        }else if(Input.GetKeyDown(upKeyStr) && transform.position.y == 1.5f){
+        }else if(Input.GetKeyDown(keys.upKey) && transform.position.y == 1.5f){
             spriteR.sprite = null;
             carrying = false;
-        }else if(Input.GetKeyDown(donwKeyStr) && transform.position.y > -3.5f){
+        }else if(Input.GetKeyDown(keys.downKey) && transform.position.y > -3.5f){
             transform.position += new Vector3(0.0f, downDist);
         }
     }
@@ -41,13 +38,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void GetItem()
     {      
-        if (Input.GetKeyDown(pickBtn) && !carrying)
+        if (Input.GetKeyDown(keys.pickKey) && !carrying)
         {
             Collider2D colider = Physics2D.Linecast(transform.position, transform.position + Vector3.right * right * 5, 
                 1 << LayerMask.NameToLayer("Item")).collider;
             
-            itemData = colider.GetComponent<ItemComponent>().ConsumeItem();
-            spriteR.sprite = itemData.sprite;
+            itemData = colider.GetComponent<ItemComponent>()?.ConsumeItem();
+            spriteR.sprite = itemData?.sprite;
 
             carrying = true;
 
