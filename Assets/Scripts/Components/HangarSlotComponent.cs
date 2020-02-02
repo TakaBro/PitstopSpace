@@ -15,7 +15,7 @@ public class HangarSlotComponent : MonoBehaviour
 
     public void UpdateItemSprite()
     {
-        itemSprite.sprite = materialNeeded?.sprite ?? null;
+        itemSprite.sprite = materialNeeded?.spriteBroken ?? null;
     }
 
     public void ClearSlot()

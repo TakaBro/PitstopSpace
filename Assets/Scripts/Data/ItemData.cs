@@ -7,4 +7,5 @@ public class ItemData : ScriptableObject
 {
     public int id;
     public Sprite sprite;
+    public Sprite spriteBroken;
 }
