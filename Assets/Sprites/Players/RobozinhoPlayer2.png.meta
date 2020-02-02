@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: 22c21437379087b40af1eb509b7abc96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3852580148230768314
+    second: Robozinho-Sheet-Player-2_0
+  - first:
+      213: 2296023966838562302
+    second: Robozinho-Sheet-Player-2_1
+  - first:
+      213: 8043540738321345841
+    second: Robozinho-Sheet-Player-2_2
+  - first:
+      213: -7945078671934101793
+    second: Robozinho-Sheet-Player-2_3
+  - first:
+      213: 2712955845016534923
+    second: Robozinho-Sheet-Player-2_4
+  - first:
+      213: 4772028832892986664
+    second: Robozinho-Sheet-Player-2_5
+  - first:
+      213: -6642857752454908518
+    second: Robozinho-Sheet-Player-2_6
+  - first:
+      213: -1876239624877880832
+    second: Robozinho-Sheet-Player-2_7
+  - first:
+      213: 4101329858197711060
+    second: Robozinho-Sheet-Player-2_8
+  - first:
+      213: 4487895437990207477
+    second: Robozinho-Sheet-Player-2_9
+  - first:
+      213: -1142897527827906781
+    second: Robozinho-Sheet-Player-2_10
+  - first:
+      213: 2440346644662822015
+    second: Robozinho-Sheet-Player-2_11
+  - first:
+      213: -247609445584640622
+    second: Robozinho-Sheet-Player-2_12
+  - first:
+      213: -6162700190823864100
+    second: Robozinho-Sheet-Player-2_13
+  - first:
+      213: -1771215897014891285
+    second: Robozinho-Sheet-Player-2_14
+  - first:
+      213: 4923481700146474873
+    second: Robozinho-Sheet-Player-2_15
+  - first:
+      213: 6729269458777955564
+    second: Robozinho-Sheet-Player-2_16
+  - first:
+      213: 975792318195456414
+    second: Robozinho-Sheet-Player-2_17
+  - first:
+      213: -1938420715162852335
+    second: Robozinho-Sheet-Player-2_18
+  - first:
+      213: -3282241197845987433
+    second: Robozinho-Sheet-Player-2_19
+  - first:
+      213: -2226776014909630342
+    second: Robozinho-Sheet-Player-2_20
+  - first:
+      213: 8792549432295787932
+    second: Robozinho-Sheet-Player-2_21
+  - first:
+      213: -683662784648311663
+    second: Robozinho-Sheet-Player-2_22
+  - first:
+      213: 3763675240259455724
+    second: Robozinho-Sheet-Player-2_23
+  - first:
+      213: 331205424109604390
+    second: RobozinhoPlayer2_0
+  - first:
+      213: 6251102769914211799
+    second: RobozinhoPlayer2_1
+  - first:
+      213: -5836121293939711889
+    second: RobozinhoPlayer2_2
+  - first:
+      213: 1528787044542452790
+    second: RobozinhoPlayer2_3
+  - first:
+      213: 2880042980530743364
+    second: RobozinhoPlayer2_4
+  - first:
+      213: -2872809557585243472
+    second: RobozinhoPlayer2_5
+  - first:
+      213: -836518212290256362
+    second: RobozinhoPlayer2_6
+  - first:
+      213: 2584543024550036270
+    second: RobozinhoPlayer2_7
+  - first:
+      213: -3519336009929860468
+    second: RobozinhoPlayer2_8
+  - first:
+      213: 4472476278246742756
+    second: RobozinhoPlayer2_9
+  - first:
+      213: -2403154511444376175
+    second: RobozinhoPlayer2_10
+  - first:
+      213: 8709120964034192707
+    second: RobozinhoPlayer2_11
+  - first:
+      213: 2770737801960760236
+    second: RobozinhoPlayer2_12
+  - first:
+      213: -1040222377719787534
+    second: RobozinhoPlayer2_13
+  - first:
+      213: -3469456728990983757
+    second: RobozinhoPlayer2_14
+  - first:
+      213: -3322883815030523626
+    second: RobozinhoPlayer2_15
+  - first:
+      213: 6600330746481693621
+    second: RobozinhoPlayer2_16
+  - first:
+      213: -7297677338647671595
+    second: RobozinhoPlayer2_17
+  - first:
+      213: -6335179273684367827
+    second: RobozinhoPlayer2_18
+  - first:
+      213: 5012741495837248452
+    second: RobozinhoPlayer2_19
+  - first:
+      213: -6992512437650986537
+    second: RobozinhoPlayer2_20
+  - first:
+      213: -2054381005844489318
+    second: RobozinhoPlayer2_21
+  - first:
+      213: 8712238617446280387
+    second: RobozinhoPlayer2_22
+  - first:
+      213: -7243502745091649459
+    second: RobozinhoPlayer2_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74f49e85136bc24dba1aad71c6878ab
+      internalID: 331205424109604390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ff2d90249b8e641b22a7c0fcfbbf6d
+      internalID: 6251102769914211799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1d65876d6e79a4eb0cd8cae3383d1e
+      internalID: -5836121293939711889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f61cc8fb45b514e8c6e8379255d761
+      internalID: 1528787044542452790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38024af93841b924c9ecfd02208417b0
+      internalID: 2880042980530743364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8911c365f3a3a654a8731589a302b7f5
+      internalID: -2872809557585243472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c6c14ff0efbd14da3df6ef2bf54adf
+      internalID: -836518212290256362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa9450e70d74294b918974b5c62b337
+      internalID: 2584543024550036270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efde03528cc85a44db2b464df7a39c29
+      internalID: -3519336009929860468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4b6706cd71ebb4ab033c002f263c69
+      internalID: 4472476278246742756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373dfa947cec6b644a4345b713fc0544
+      internalID: -2403154511444376175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4977d0e99d0f7d841985f8d1c7bb733e
+      internalID: 8709120964034192707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2fdfdc0d72b8741b1cfdb7f3885992
+      internalID: 2770737801960760236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953ae0e59a17cea48935ded895a4f86e
+      internalID: -1040222377719787534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d255342c16a4c0c49a75ecf6f9b54670
+      internalID: -3469456728990983757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f86ad0ff271c344afb2dc9d4ca8d31
+      internalID: -3322883815030523626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783c521502f6e924789ecf85e2c969eb
+      internalID: 6600330746481693621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ad8075ff7195a46adbfee2404c48e6
+      internalID: -7297677338647671595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7766933b8d1944896b19cf1d75cbfe
+      internalID: -6335179273684367827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8241e244e5ce274a871689622175b8c
+      internalID: 5012741495837248452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca049e4a5ac2f84eba36443c2954b98
+      internalID: -6992512437650986537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad22c1226741c8842b9a4d2a47247bd1
+      internalID: -2054381005844489318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374cb73b844336047bc797ae1665cfa1
+      internalID: 8712238617446280387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobozinhoPlayer2_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb731cc91bf1af438f7263c96ae87cf
+      internalID: -7243502745091649459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
