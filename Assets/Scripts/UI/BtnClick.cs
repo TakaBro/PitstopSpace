@@ -1,24 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class BtnClick : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Image blackImg;
+    public Animator anim;
+    public Button firstBtn;
+
+    public void Start(){
+        firstBtn.Select();
+    }
+
+    public void BtnMenu()
+    {
+        StartCoroutine(Fading("Menu"));
+    }
+
     public void BtnPlay()
     {
-        SceneManager.LoadScene("Scenery 1");
+        StartCoroutine(Fading("Scenery 1"));
     }
 
-    public void BtnHighScore()
+    public void BtnCredits()
     {
-        SceneManager.LoadScene("HighScore");
+        SceneManager.LoadScene("Credits");
     }
 
-    // Update is called once per frame
     public void BtnExit()
     {
         Application.Quit();
+    }
+
+    IEnumerator Fading(string scene)
+    {
+        Debug.Log("FADE");
+        anim.SetBool("fade", true);
+        yield return new WaitUntil(()=>blackImg.color.a==1);
+        SceneManager.LoadScene(scene);
     }
 }
