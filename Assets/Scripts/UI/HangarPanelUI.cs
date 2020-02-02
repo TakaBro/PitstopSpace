@@ -50,7 +50,7 @@ public class HangarPanelUI : MonoBehaviour
     {
         for (int i = 0; i < lifeCounter.Count; i++)
         {
-            if (i + 1 < value)
+            if (i + 1 <= value)
                 lifeCounter[i].SetActive(true);
             else
                 lifeCounter[i].SetActive(false);

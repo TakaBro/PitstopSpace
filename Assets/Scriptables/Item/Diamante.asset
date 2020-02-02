@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Diamante
   m_EditorClassIdentifier: 
   id: 2
-  sprite: {fileID: 21300000, guid: 9dce3dcc05cfe744ca415368046d5acc, type: 3}
+  sprite: {fileID: 21300000, guid: 798068fc14cec9147b119a7bbcac5b30, type: 3}
+  spriteBroken: {fileID: 21300000, guid: 1edd81e36cec07d4e8af58fdef7ff08a, type: 3}
