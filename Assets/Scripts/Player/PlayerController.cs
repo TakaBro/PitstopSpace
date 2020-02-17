@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
             spriteR.sprite = null;
             carrying = false;
             m_Animator.SetBool("Carrying", false);
+            m_Animator.SetTrigger("Trash");
         }else if(Input.GetKeyDown(keys.downKey) && transform.position.y > -3.5f){
             transform.position += new Vector3(0.0f, downDist);
         }
@@ -69,11 +70,15 @@ public class PlayerController : MonoBehaviour
             HangarSlotComponent slot = colider.GetComponent<HangarSlotComponent>();
             if (slot)
             {
-                slot.FixPart(itemData);
+                bool isFixed = slot.FixPart(itemData);
                 itemData = null;
                 carrying = false;
                 spriteR.sprite = null;
                 m_Animator.SetBool("Carrying", carrying);
+                if (isFixed)
+                    m_Animator.SetTrigger("FixedPart");
+                else
+                    m_Animator.SetTrigger("MissedPart");
             }
             
         }

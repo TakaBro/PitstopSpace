@@ -26,7 +26,7 @@ public class HangarSlotComponent : MonoBehaviour
         status = SlotStatus.NOT_PRESENT;
     }
 
-    public void FixPart(ItemData item)
+    public bool FixPart(ItemData item)
     {
         if (status == SlotStatus.DEFECTIVE)
         {
@@ -35,18 +35,21 @@ public class HangarSlotComponent : MonoBehaviour
                 status = SlotStatus.FIXED;
                 onSlotFixed.Invoke();
                 itemSprite.color = new Color(0.3f, 0.7f, 0.3f);
+                return true;
             }
             else
             {
                 status = SlotStatus.MISSED;
                 onSlotMissed.Invoke();
                 itemSprite.color = new Color(0.7f, 0.3f, 0.3f);
+                return false;
             }
         }
         else
         {
             status = SlotStatus.MISSED;
             onSlotMissed.Invoke();
+            return false;
         }
         
     }
