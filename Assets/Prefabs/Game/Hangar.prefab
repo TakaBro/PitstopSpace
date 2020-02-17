@@ -203,7 +203,7 @@ MonoBehaviour:
   m_ImpulseDefinition:
     m_ImpulseChannel: 1
     m_RawSignal: {fileID: 11400000, guid: 351d8032db9ad1348b2c1150101f0b3a, type: 2}
-    m_AmplitudeGain: 1
+    m_AmplitudeGain: 0.75
     m_FrequencyGain: 5
     m_RepeatMode: 1
     m_Randomize: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       m_AttackTime: 0
-      m_SustainTime: 0.2
+      m_SustainTime: 0.1
       m_DecayTime: 0.7
       m_ScaleWithImpact: 0
       m_HoldForever: 0
@@ -1199,12 +1199,12 @@ PrefabInstance:
     - target: {fileID: 7152135580898287148, guid: 531d5200360385647ab6dbcba5d320b0,
         type: 3}
       propertyPath: onSlotFixed.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7152135580898287148, guid: 531d5200360385647ab6dbcba5d320b0,
         type: 3}
       propertyPath: onSlotMissed.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7152135580898287148, guid: 531d5200360385647ab6dbcba5d320b0,
         type: 3}

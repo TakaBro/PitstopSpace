@@ -82,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ChannelMask: 1
   m_Gain: 1
-  m_Use2DDistance: 1
+  m_Use2DDistance: 0
 --- !u!1 &7100259830715060470
 GameObject:
   m_ObjectHideFlags: 0
