@@ -64,6 +64,7 @@ MonoBehaviour:
   spaceshipManager: {fileID: 11400000, guid: e283cee94e092d44181bc7f0a2caa5b7, type: 2}
   itemsManager: {fileID: 11400000, guid: 64f4162b3d4f6d44391e2325e36840bb, type: 2}
   gameData: {fileID: 11400000, guid: 138589de998d67b4ba48dc89dd9ddeca, type: 2}
+  ProgressionData: {fileID: 11400000, guid: 60965e6cca7362a44ae0741445861ada, type: 2}
   onShipDocked:
     m_PersistentCalls:
       m_Calls:
@@ -3403,6 +3404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spaceship
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697201712213478971, guid: 0f062c57c24e1d24c8ac9c6f9a1c058e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f062c57c24e1d24c8ac9c6f9a1c058e, type: 3}

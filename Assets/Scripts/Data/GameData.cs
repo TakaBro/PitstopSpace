@@ -22,6 +22,11 @@ public class GameData : ScriptableObject
     public Action onLifeDepleted;
     [SerializeField] ScriptableEvent onGameLost;
     
+
+    public int Points
+    {
+        get => points;
+    }
     public void Reset()
     {
         timer = 0;
