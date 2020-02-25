@@ -10,6 +10,7 @@ public class HangarComponent : MonoBehaviour
     [SerializeField] SpaceshipManager spaceshipManager;
     [SerializeField] ItemsManager itemsManager;
     [SerializeField] GameData gameData;
+    [SerializeField] ProgressionData ProgressionData;
     float originalTimer;
     bool timerRunning;
 
@@ -62,11 +63,7 @@ public class HangarComponent : MonoBehaviour
         Debug.Log($"Preparing to dock {shipData.name}");
         spaceship.ResetShip(shipData);
 
-        foreach (SlotCode slot in shipData.slots)
-        {
-            if (Random.Range(1, 11) < 3)
-                spaceship.CreateDefects(slot, itemsManager.GetRandomItem());
-        }
+        SetupShipDefects(shipData);
 
         foreach (HangarSlotComponent slotComponent in slots)
         {
@@ -91,6 +88,29 @@ public class HangarComponent : MonoBehaviour
 
         ResetTimer();
         onShipDocked.Invoke();
+    }
+
+    public void SetupShipDefects (SpaceshipData shipData)
+    {
+        ProgressionLevel level = ProgressionData.GetCurrentLevel(gameData.Points);
+        Debug.Log($"Current Level : {level.id}");
+        int clampedMaxDefects = Mathf.Clamp(level.maxDefects, level.minDefects, shipData.slots.Count);
+        int totalDefects = Random.Range(level.minDefects, clampedMaxDefects);
+
+        List<SlotCode> defects = new List<SlotCode>();
+
+        while (defects.Count < totalDefects)
+        {
+            SlotCode slot = shipData.slots[Random.Range(0, shipData.slots.Count)];
+            if (defects.Contains(slot))
+                continue;
+            defects.Add(slot);
+        }
+
+        foreach (SlotCode slot in defects)
+        {
+                spaceship.CreateDefects(slot, itemsManager.GetRandomItem());
+        }
     }
 
     public void OnSlotStatChanged()

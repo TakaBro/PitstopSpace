@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e792fcbaf35f1e1478c3cce8b028c234, type: 3}
   m_Name: Conveyor Belt Data
   m_EditorClassIdentifier: 
-  moveDelay: 1
+  moveDelay: 0.75
   positions:
   - {x: 0, y: 2.5}
   - {x: 0, y: 1.5}

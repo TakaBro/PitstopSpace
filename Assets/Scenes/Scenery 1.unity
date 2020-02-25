@@ -1465,7 +1465,7 @@ PrefabInstance:
     - target: {fileID: 2181928230275744429, guid: f36f0e367685156478379be455d3049a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2181928230275744429, guid: f36f0e367685156478379be455d3049a,
         type: 3}
@@ -1904,7 +1904,7 @@ PrefabInstance:
     - target: {fileID: 2181928230275744429, guid: f36f0e367685156478379be455d3049a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2181928230275744429, guid: f36f0e367685156478379be455d3049a,
         type: 3}
@@ -2044,6 +2044,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1598715566461964069, guid: 0000a6ed78192644e92e55812c2585e3,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157288213315850884, guid: 0000a6ed78192644e92e55812c2585e3,
         type: 3}
       propertyPath: m_Name
@@ -2117,6 +2122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hangar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514968521402364978, guid: 7ce4e3ae7f132e440b9cbc6913d882ff,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8069407091890526751, guid: 7ce4e3ae7f132e440b9cbc6913d882ff,
         type: 3}
